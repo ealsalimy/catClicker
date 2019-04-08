@@ -86,6 +86,30 @@ var catListView() = {
     this.catListElem = document.getElementById('cat_list');
     // update DOM element with the cats values that we get from the render function
     this.render();
+  },
+  render: function() {
+    // Get cats values from octopus
+    var cats = octupus.getCats();
+    this.catListElem.innerHTML='';
+    var cat, elem, i;
+    //Loop over cats cat_list
+    for (var i = 0; i < cats.length; i++) {
+      cat = cats[i];
+    // create new cat item
+    elem = document.createElement('li');
+    elem.textContent = cat.name;
+    //Set current cat and render CatView
+    elem.addEventListener('click', (function(catCopy){
+      return function() {
+        octopus.setCurrentCat(catCopy);
+        catView.render();
+      };
+    })(cat));
+    //Add the element to the list
+    this.catListElem.append(elem);
+    }
   }
 
 };
+
+octopus.init();
