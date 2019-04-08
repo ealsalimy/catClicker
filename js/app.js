@@ -35,6 +35,9 @@ var octupus = {
   init: function() {
     // Current cat initially is the first one in the list
     model.currentCat = model.cats[0];
+    //initialize cat Views
+    catListView.init();
+    CatView.init();
 
   },
   getCurrentCat: function() {
@@ -46,6 +49,11 @@ var octupus = {
   //Set the selected cat to the object passed in
   setCurrentCat: function(cat) {
     model.currentCat = cat;
+  },
+  // Increment the clicks counter for the current cat
+  incrementCounter: function() {
+    model.currentCat.clicks++;
+    catView.render();
   }
 };
 
