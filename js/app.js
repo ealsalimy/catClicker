@@ -73,7 +73,7 @@ var catView = {
 
   render: function() {
     //update the DOM elements with the values of the current cat
-    var currentCat = octupus.getCurrentCat();
+    var currentCat = octopus.getCurrentCat();
     this.catNameElem.textContent = currentCat.name;
     this.catClicksElem.textContent = currentCat.clicks;
     this.catImgElem.src = currentCat.imgLink;
@@ -89,7 +89,7 @@ var catListView = {
   },
   render: function() {
     // Get cats values from octopus
-    var cats = octupos.getCats();
+    var cats = octopus.getCats();
     this.catListElem.innerHTML='';
     var cat, elem, i;
     //Loop over cats cat_list
