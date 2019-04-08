@@ -70,7 +70,7 @@ var catView = {
       octopus.incrementCounter();
     });
   },
-  
+
   render: function() {
     //update the DOM elements with the values of the current cat
     var currentCat = octupus.getCurrentCat();
@@ -81,5 +81,11 @@ var catView = {
 };
 
 var catListView() = {
+  init: function() {
+    // store the DOM elements
+    this.catListElem = document.getElementById('cat_list');
+    // update DOM element with the cats values that we get from the render function
+    this.render();
+  }
 
 };
