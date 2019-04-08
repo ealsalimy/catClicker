@@ -32,6 +32,11 @@ var model = {
 
 /* Octopus */
 var octupus = {
+  init: function() {
+    // Current cat initially is the first one in the list
+    model.currentCat = model.cats[0];
+    
+  }
 
 };
 
