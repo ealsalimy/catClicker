@@ -42,8 +42,11 @@ var octupus = {
   },
   getCats: function() {
     return model.cats;
+  },
+  //Set the selected cat to the object passed in
+  setCurrentCat: function(cat) {
+    model.currentCat = cat;
   }
-
 };
 
 /* Views */
