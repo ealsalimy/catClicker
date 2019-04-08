@@ -37,7 +37,7 @@ var octopus = {
     model.currentCat = model.cats[0];
     //initialize cat Views
     catListView.init();
-    CatView.init();
+    catView.init();
 
   },
   getCurrentCat: function() {
