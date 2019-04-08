@@ -59,6 +59,13 @@ var octupus = {
 
 /* Views */
 var catView = {
+  init: function() {
+    // store pointers to DOM elements
+    this.catBoxElem = document.getElementById('cat_box');
+    this.catNameElem = document.getElementById('cat_name');
+    this.catImgElem = document.getElementById('cat_img');
+    this.catClicksElem = document.getElementById('clicks');
+  },
 
 };
 
