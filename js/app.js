@@ -65,6 +65,10 @@ var catView = {
     this.catNameElem = document.getElementById('cat_name');
     this.catImgElem = document.getElementById('cat_img');
     this.catClicksElem = document.getElementById('clicks');
+    //Add eventListnere to increment counter for number of clicks on the cat image
+    this.catImgElem.addEventListener('click', function(){
+      octopus.incrementCounter();
+    });
   },
 
 };
