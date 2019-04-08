@@ -1,0 +1,50 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows:0.5fr 3fr 0.3fr;
+  grid-template-areas: "header header"
+                       "cat_box cat_list"
+                       "footer footer";
+  background-color: #FFFFE0;
+}
+
+header {
+  grid-area: header;
+}
+#cat_list {
+  grid-area: cat_list;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+
+}
+
+#cat_box {
+  grid-area: cat_box;
+}
+
+#cat_img {
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+}
+
+footer {
+  grid-area: footer;
+}
