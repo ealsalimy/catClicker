@@ -3,3 +3,5 @@ An interactive web app built for Udacity Full Stack nanodegree that counts click
 ## How to use
 * Download the repository
 * Open the 'index.html' in your favorite browser and click away
+## Reference
+* https://github.com/udacity/ud989-cat-clicker-premium-vanilla
