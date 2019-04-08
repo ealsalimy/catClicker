@@ -31,7 +31,7 @@ var model = {
 };
 
 /* Octopus */
-var octupus = {
+var octopus = {
   init: function() {
     // Current cat initially is the first one in the list
     model.currentCat = model.cats[0];
@@ -80,7 +80,7 @@ var catView = {
   }
 };
 
-var catListView() = {
+var catListView = {
   init: function() {
     // store the DOM elements
     this.catListElem = document.getElementById('cat_list');
@@ -89,7 +89,7 @@ var catListView() = {
   },
   render: function() {
     // Get cats values from octopus
-    var cats = octupus.getCats();
+    var cats = octupos.getCats();
     this.catListElem.innerHTML='';
     var cat, elem, i;
     //Loop over cats cat_list
