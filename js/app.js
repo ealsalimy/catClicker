@@ -70,7 +70,14 @@ var catView = {
       octopus.incrementCounter();
     });
   },
-
+  
+  render: function() {
+    //update the DOM elements with the values of the current cat
+    var currentCat = octupus.getCurrentCat();
+    this.catNameElem.textContent = currentCat.name;
+    this.catClicksElem.textContent = currentCat.clicks;
+    this.catImgElem.src = currentCat.imgLink;
+  }
 };
 
 var catListView() = {
