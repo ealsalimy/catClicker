@@ -39,6 +39,9 @@ var octupus = {
   },
   getCurrentCat: function() {
     return model.currentCat;
+  },
+  getCats: function() {
+    return model.cats;
   }
 
 };
